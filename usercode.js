@@ -34,5 +34,5 @@ var signature = HMAC-SHA256(unsignedToken, SECRET_KEY)
 
 data.token = encodeBase64Url(header) + '.' + encodeBase64Url(payload) + '.' + encodeBase64Url(signature)
     
-    return data;
+    return data.token;
 };
