@@ -1,3 +1,5 @@
+const base64url = require('base64url');
+
 module.exports = (data) => {
 var header = { "alg": "HS256", "typ": "JWT"};
 
